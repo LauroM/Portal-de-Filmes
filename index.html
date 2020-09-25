@@ -1,95 +1,121 @@
-<!doctype html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
-    <title>Cine web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-    
-    <!-- Nav -->
-    <div class="topnav nav-content" id="myTopnav">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <div>
-            <h1 style="color: red;">
-                Cine WEB
-            </h1>
-        </div>
-        <div>
-            <button class="button">Login</button>
-        </div>
-        <!-- <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a> -->
-    </div>
+    <title>Portal de Filmes</title>
+  </head>
+  <body style="background: black;">
 
-    <div style="margin-top: 50px;">
-        <iframe src="https://www.youtube.com/embed/fbS0efVvkVU" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
-    </div>
-
+    <!--Nav Bar-->
     <div>
-        <h1 class="titulos">Top 10</h1>
+        <ul class="nav justify-content-center" style="background-color: rgb(44, 44, 44);">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Destaques</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Avaliações</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Entrevistas & Makingof</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Novidades</a>
+            </li>
+        </ul>
+    </div>
 
-        <div class="flex-container">
-            <div class="card">
-                <img src="https://www.jaf-crown.com/wp-content/themes/oli/img/users/2.png" alt="Avatar" style="width:100%">
-                <div class="container-card">
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p> 
+    <!-- Lançamentos -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <h1 style="text-align: center;">Lançamentos</h1>
+        <div class="carousel-inner">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+
+            <div class="carousel-item active"> 
+                <div style="width: 50%;">
+                    <iframe src="https://www.youtube.com/embed/zJxSqzlIJwU" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                </div>
+                <div style="width: 50%;">
+                    A
                 </div>
             </div>
-            <div class="card">
-                <img src="https://www.jaf-crown.com/wp-content/themes/oli/img/users/2.png" alt="Avatar" style="width:100%">
-                <div class="container-card">
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p> 
+
+            <div class="carousel-item">
+                <div style="width: 50%;">
+                    <iframe src="https://www.youtube.com/embed/XW2E2Fnh52w" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                </div>
+                <div style="width: 50%;">
+                    A
+                </div>                
+            </div>
+
+            <div class="carousel-item">
+                <div style="width: 50%;">
+                    <iframe src="https://www.youtube.com/embed/XEMwSdne6UE" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                </div>
+                <div style="width: 50%;">
+                    A
                 </div>
             </div>
-            <div class="card">
-                <img src="https://www.jaf-crown.com/wp-content/themes/oli/img/users/2.png" alt="Avatar" style="width:100%">
-                <div class="container-card">
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p> 
+        
+        </div>
+    </div>
+
+    <!-- EM DESTAQUE-->
+    <div>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="display: inline-block;">
+                <h1>Em destaque</h1>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categoria
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">TODOS</a>
+                    <a class="dropdown-item" href="#">Ação</a>
+                    <a class="dropdown-item" href="#">Aventura</a>
+                    <a class="dropdown-item" href="#">Comédia</a>
+                    <a class="dropdown-item" href="#">Romance</a>
+                    <a class="dropdown-item" href="#">Terror</a>
+                    <a class="dropdown-item" href="#">Infantil</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://www.jaf-crown.com/wp-content/themes/oli/img/users/2.png" alt="Avatar" style="width:100%">
-                <div class="container-card">
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p> 
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://www.jaf-crown.com/wp-content/themes/oli/img/users/2.png" alt="Avatar" style="width:100%">
-                <div class="container-card">
-                    <h4><b>John Doe</b></h4> 
-                    <p>Architect & Engineer</p> 
-                </div>
-            </div>
+        
         </div>
         
-    
-    
-    
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2237410:1589934544/batman.jpg?f=16x9&$p$f=ed7f7ad" alt="Imagem de capa do card">
+            </div>
+        </div>
+
+
+        <div>
+            <button type="button" class="btn btn-primary btn-sm">Carregar mais filmes</button>
+        </div>
     </div>
 
-    <div>
-        Slide lançamentos
-    </div>
 
-    <footer>
-        footer
-    </footer>
 
-</body>
 
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
