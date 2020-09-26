@@ -85,34 +85,37 @@
     </div>
 
     <!-- DEGRADE-->
-    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c, #777777);">
+    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c, #343a40);">
 
     </div>
 
     <!-- EM DESTAQUE-->
-    <div style="background: #777777;">
+    <div style="background: #343a40;">
         
-        <div style="display: flex; justify-content: space-around;">
-            <div style="display: inline-block;">
-                <h1>Em destaque</h1>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            
+            <div style="display: inline-block; margin: 15px 0px 30px 0px;">
+                <h1 style="color: red;">Em destaque</h1>
             </div>
-            <div class="btn-group">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Categoria
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">TODOS</a>
-                    <a class="dropdown-item" href="#">Ação</a>
-                    <a class="dropdown-item" href="#">Aventura</a>
-                    <a class="dropdown-item" href="#">Comédia</a>
-                    <a class="dropdown-item" href="#">Romance</a>
-                    <a class="dropdown-item" href="#">Terror</a>
+            <div style="display: inline-block; margin: 30px 0px 15px 0px;">
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categoria
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">TODOS</a>
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Aventura</a>
+                        <a class="dropdown-item" href="#">Comédia</a>
+                        <a class="dropdown-item" href="#">Romance</a>
+                        <a class="dropdown-item" href="#">Terror</a>
+                    </div>
                 </div>
             </div>
         
         </div>
         
-        <div class="cards-destaques">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
             <div class="card" style="width: 12rem;">
                 <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
             </div>
@@ -125,7 +128,7 @@
         </div>
 
 
-        <div>
+        <div style="margin: 50px 0px 30px 0px; text-align: center;">
             <button type="button" class="btn btn-primary btn-sm">Carregar mais filmes</button>
         </div>
     
