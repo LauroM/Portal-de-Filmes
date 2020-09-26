@@ -7,6 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="/fontawesome-free-5.14.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.14.0-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.14.0-web/css/solid.css" rel="stylesheet">
+    <link href="/fontawesome-free-5.14.0-web/css/regular.css" rel="stylesheet">
 
     <title>Portal de Filmes</title>
   </head>
@@ -54,12 +58,47 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
 
-            <div class="carousel-item active"> 
-                <div style="width: 50%; text-align: center;">
-                    <iframe width="500" height="350" src="https://www.youtube.com/embed/zJxSqzlIJwU" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded"></iframe>
-                </div>
-                <div style="width: 50%;">
-                    A
+            <div class="carousel-item active">
+                <div style="display: flex;">
+                    <div style="width: 50%; text-align: center; display: inline-block;">
+                        <iframe width="500" height="350" src="https://www.youtube.com/embed/FnCdOQsX5kc" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded"></iframe>
+                    </div>
+                    <div style="width: 50%; display: inline-block;">
+                        <div style="width: 500px; height: 350px; color: white; font-size: 13px !important;">
+                            <h3 style="text-align: center;">IT - A coisa</h3>
+    
+                            <!-- Sinopse -->
+                            <div>
+                                <p style="text-align: justify;">
+                                    <b>Sinopse: </b> Um grupo de crianças se une para investigar o misterioso desaparecimento de vários jovens em sua cidade. Eles descobrem que o culpado é Pennywise, um palhaço cruel que se alimenta de seus medos e cuja violência teve origem há vários séculos.
+                                </p>
+                            </div>
+    
+                            <!-- Direção, Roteiro, data-->
+                            <div>
+                                <p>
+                                    <b>Direção: </b>Andy Muschietti
+                                </p>
+                                <p>
+                                    <b>Roteiro: </b> Cary Fukunaga, Gary Dauberman, Chase Palmer
+                                </p>
+                                <p>
+                                    <b>Estreia: 07/09/2017</b>
+                                </p>
+                                <p>
+                                    <b>Elenco: Bill Skarsgård, Finn Wolfhard, Sophia Lillis, Jaeden Martell</b>
+                                </p>
+                            </div>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+    
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -85,19 +124,17 @@
     </div>
 
     <!-- DEGRADE-->
-    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c, #343a40);">
-
-    </div>
+    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c, #343a40);"></div>
 
     <!-- EM DESTAQUE-->
     <div style="background: #343a40;">
         
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
             
-            <div style="display: inline-block; margin: 15px 0px 30px 0px;">
+            <div style="display: inline-block; margin: 15px 0px 30px 150px;">
                 <h1 style="color: red;">Em destaque</h1>
             </div>
-            <div style="display: inline-block; margin: 30px 0px 15px 0px;">
+            <div style="display: inline-block; margin: 30px 150px 15px 0px;">
                 <div class="btn-group">
                     <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categoria
@@ -120,21 +157,115 @@
                 <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
             </div>
             <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
+                <img class="card-img-top" src="https://allmanaque.com//uploads/images/cartazligadajust.jpg" alt="Imagem de capa do card">
             </div>
             <div class="card" style="width: 12rem;">
-                <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
+                <img class="card-img-top" src="https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/0/201906131077-uau-posters-filmes-avengers-infinity-war-vingadores-guerra-infinita.jpg" alt="Imagem de capa do card">
             </div>
         </div>
 
 
-        <div style="margin: 50px 0px 30px 0px; text-align: center;">
+        <div style="margin: 50px 0px 0px 0px; text-align: center;">
             <button type="button" class="btn btn-primary btn-sm">Carregar mais filmes</button>
         </div>
     
     </div>
 
+    <!-- DEGRADE-->
+    <div style="width: 100%; height: 50px; background-image: linear-gradient(#343a40,#0c0c0c);"></div>
 
+
+    <!-- Avaliações -->
+    <div>
+        <div style="display: inline-block; margin: 15px 0px 30px 150px;">
+            <h1 style="color: red;">Avaliações</h1>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+            
+            <div class="card" style="height: 200px; width: 300px;">
+                <div class="card-body">
+                    <div>
+                        <img src="https://vignette.wikia.nocookie.net/chespirito/images/a/a6/Chaves_1978.png/revision/latest/top-crop/width/360/height/450?cb=20180814003635&path-prefix=pt" alt="Avatar" style="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+                        Chaves
+                    </div>
+                    <div>
+                        <b>Avaliação: </b>
+                        Só tem filme ruim nesse site, era melhor ter ido no youtube assistir o filme do Pelé
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Avaliacao -->
+            <div class="card" style="height: 200px; width: 300px;">
+                <div class="card-body">
+                    <div>
+                        <img src="https://vignette.wikia.nocookie.net/chespirito/images/a/a6/Chaves_1978.png/revision/latest/top-crop/width/360/height/450?cb=20180814003635&path-prefix=pt" alt="Avatar" style="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+                        Chaves
+                    </div>
+                    <div>
+                        <b>Avaliação: </b>
+                        Só tem filme ruim nesse site, era melhor ter ido no youtube assistir o filme do Pelé
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Avaliacao -->
+            <div class="card" style="height: 200px; width: 300px;">
+                <div class="card-body">
+                    <div>
+                        <img src="https://vignette.wikia.nocookie.net/chespirito/images/a/a6/Chaves_1978.png/revision/latest/top-crop/width/360/height/450?cb=20180814003635&path-prefix=pt" alt="Avatar" style="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+                        Chaves
+                    </div>
+                    <div>
+                        <b>Avaliação: </b>
+                        Só tem filme ruim nesse site, era melhor ter ido no youtube assistir o filme do Pelé
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+
+        <div style="margin: 50px 0px 0px 0px; text-align: center;">
+            <button type="button" class="btn btn-primary btn-sm">Carregar mais avaliações</button>
+        </div>
+
+    </div>
+
+
+    <!-- DEGRADE-->
+    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c,#343a40);"></div>
+
+    <div style="background: #343a40;">
+        <div style="display: inline-block; margin: 15px 0px 30px 150px;">
+            <h1 style="color: red;">Entrevistas & Making of</h1>
+        </div>
+
+    </div>
 
 
 
