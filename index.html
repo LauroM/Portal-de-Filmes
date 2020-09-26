@@ -13,39 +13,50 @@
   <body style="background: black;">
 
     <!--Nav Bar-->
-    <div>
-        <ul class="nav justify-content-center" style="background-color: rgb(44, 44, 44);">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Lançamentos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Destaques</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Avaliações</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Entrevistas & Makingof</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Novidades</a>
-            </li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Lançamentos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entrevistas & Makingof</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Novidades</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
     <!-- Lançamentos -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-        <h1 style="text-align: center;">Lançamentos</h1>
+        <h1 style="text-align: center; color: red; margin: 15px 0px 30px 0px;">Lançamentos</h1>
         <div class="carousel-inner">
+            
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
+            </ol>
 
             <div class="carousel-item active"> 
-                <div style="width: 50%;">
-                    <iframe src="https://www.youtube.com/embed/zJxSqzlIJwU" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                <div style="width: 50%; text-align: center;">
+                    <iframe width="500" height="350" src="https://www.youtube.com/embed/zJxSqzlIJwU" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded"></iframe>
                 </div>
                 <div style="width: 50%;">
                     A
@@ -53,8 +64,8 @@
             </div>
 
             <div class="carousel-item">
-                <div style="width: 50%;">
-                    <iframe src="https://www.youtube.com/embed/XW2E2Fnh52w" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                <div style="width: 50%; text-align: center;">
+                    <iframe width="500" height="350" src="https://www.youtube.com/embed/XW2E2Fnh52w" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded"></iframe>
                 </div>
                 <div style="width: 50%;">
                     A
@@ -62,8 +73,8 @@
             </div>
 
             <div class="carousel-item">
-                <div style="width: 50%;">
-                    <iframe src="https://www.youtube.com/embed/XEMwSdne6UE" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded" style="width: 100%; height: 650px;"></iframe>
+                <div style="width: 50%; text-align: center;">
+                    <iframe width="500" height="350" src="https://www.youtube.com/embed/XEMwSdne6UE" frameborder="0" allowfullscreen="" class="fluidvids-item" data-fluidvids="loaded"></iframe>
                 </div>
                 <div style="width: 50%;">
                     A
@@ -73,8 +84,14 @@
         </div>
     </div>
 
+    <!-- DEGRADE-->
+    <div style="width: 100%; height: 50px; background-image: linear-gradient(#0c0c0c, #777777);">
+
+    </div>
+
     <!-- EM DESTAQUE-->
-    <div>
+    <div style="background: #777777;">
+        
         <div style="display: flex; justify-content: space-around;">
             <div style="display: inline-block;">
                 <h1>Em destaque</h1>
@@ -90,15 +107,20 @@
                     <a class="dropdown-item" href="#">Comédia</a>
                     <a class="dropdown-item" href="#">Romance</a>
                     <a class="dropdown-item" href="#">Terror</a>
-                    <a class="dropdown-item" href="#">Infantil</a>
                 </div>
             </div>
         
         </div>
         
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2237410:1589934544/batman.jpg?f=16x9&$p$f=ed7f7ad" alt="Imagem de capa do card">
+        <div class="cards-destaques">
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGYo2V0tCNd_Da0KzP_-ErHzN_3gcyrEEtxbxWqDQEjaWF7OK2" alt="Imagem de capa do card">
             </div>
         </div>
 
@@ -106,6 +128,7 @@
         <div>
             <button type="button" class="btn btn-primary btn-sm">Carregar mais filmes</button>
         </div>
+    
     </div>
 
 

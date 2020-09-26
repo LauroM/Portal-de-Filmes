@@ -41,6 +41,14 @@ body {
     display: none;
 }
 
+/* container de filtes */
+.cards-destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -95,20 +103,4 @@ body {
 .titulos {
     color: whitesmoke;
     margin: 25px;
-}
-
-/* container de filtes */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  
-.flex-container > div {
-    background-color: #f1f1f1;
-    /* width: 100px; */
-    /* margin: 10px; */
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
