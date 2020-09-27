@@ -1,6 +1,6 @@
 
 var mockDestaques = [
-    {
+    [{
         cartaz: 'https://upload.wikimedia.org/wikipedia/pt/f/ff/1917_poster.jpg'
     },
     {
@@ -26,18 +26,37 @@ var mockDestaques = [
     },
     {
         cartaz: 'https://http2.mlstatic.com/poster-peq-imp-pap-couche-a3-do-filme-gladiador-ver2-D_NQ_NP_13756-MLB235315104_1519-F.jpg'
-    }
-
+    }],
+    [{
+        cartaz: 'https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/0/201906131110-uau-posters-filmes-bumblebee.jpg'
+    },
+    {
+        cartaz: 'https://br.web.img2.acsta.net/r_1280_720/pictures/17/04/18/19/09/596203.jpg'
+    },
+    {
+        cartaz: 'https://br.web.img3.acsta.net/pictures/19/04/18/22/00/4180106.jpg'
+    },
+    {
+        cartaz: 'https://conteudo.imguol.com.br/c/entretenimento/fd/2019/08/24/o-novo-poster-de-star-wars-a-ascensao-skywalker-1566668329684_v2_1296x1920.jpg'
+    },
+    {
+        cartaz: 'https://www.criatives.com.br/wp-content/uploads/2012/04/Horror-Movie-Posters-02.jpg'
+    },
+    {
+        cartaz: 'https://imgs.netcine.info/wp-content/uploads/2018/02/MV5BMGEzZjdjMGQtZmYzZC00N2I4LThiY2QtNWY5ZmQ3M2ExZmM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg'
+    },
+    {
+        cartaz: 'https://www.mansaowayne.com.br/wp-content/uploads/2017/10/posterliga25.jpg'
+    }],
 ];
 
 var countDestaques = 0;
-
 
 function carregarDestaques(){
     var divPai = document.getElementById('demo');
     
     if(countDestaques < 2){
-        mockDestaques.forEach(el => {
+        mockDestaques[countDestaques].forEach(el => {
             var divNova = document.createElement('div');
             divNova.innerHTML = `<div class="card" style="width: 12rem; margin: 5px;"> <img class="card-img-top" src="${el.cartaz}" alt="Imagem de capa do card"> </div>`;
             divPai.append(divNova);
