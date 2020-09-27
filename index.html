@@ -42,7 +42,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Filmes, atores..." aria-label="Search">
-                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#modalPesquisa">Buscar</button>
             </form>
         </div>
     </nav>
@@ -464,7 +464,7 @@
 
         </div>
         <div style="margin: 50px 0px 0px 0px; text-align: center;">
-            <button type="button" class="btn btn-primary btn-sm">Fique por dentro das novidades</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="openGit()">Fique por dentro das novidades</button>
         </div>
 
     </div>
@@ -478,8 +478,8 @@
             <div style="text-align: center; margin: 0px 0px 30px 0px; width: 50%;">
                 <h1 style="color: red;">Sobre</h1>
                 <p style="color: white;">
-                Trabalho da disciplina tópicos II - Desenvolvimentos de Interfaces Web. Trabalho tem como objetivo construir um portal de filmes usando tecnologias Web e que seja responsivo(foco inicial).
-                </p>
+                Trabalho da disciplina tópicos II - Desenvolvimentos de Interfaces Web, do curso de Ciência da Computação da Pontifícia Universidade Católica de Minas Gerais.</p>
+                <p style="color: white;">A primeira parte deste trabalho tem como objetivo construir um portal de filmes usando tecnologias Web e que seja responsivo. A sergunda parte será feito uma integração com API de filmes. </p>
             </div>
             <div style="margin: 0px 0px 30px 0px;">
                 <h1 style="color: red;">Editorial</h1>
@@ -530,6 +530,25 @@
         </div>
         <div class="modal-body" style="width: 100%; text-align: center; background: black;">
           <img width="300" height="300" src="https://photos1.blogger.com/blogger/935/2770/1600/thatsallfolks.jpg" alt="thts all folks!">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalPesquisa" tabindex="-1" role="dialog" aria-labelledby="modalPesquisaHomer" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPesquisaHomer">Nenhum registro encontrado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="width: 100%; text-align: center;">
+          <img width="300" height="300" src="https://i.pinimg.com/736x/8c/20/68/8c20686aec2745e18a814ffa992e4000.jpg" alt="dho!">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>

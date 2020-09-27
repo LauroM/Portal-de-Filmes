@@ -67,3 +67,7 @@ function carregarDestaques(){
     }
     console.log('condador de clicks => ', countDestaques++);
 }
+
+function openGit(){
+    window.open('https://github.com/LauroM/Portal-de-Filmes','_blank');
+}
